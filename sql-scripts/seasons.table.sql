@@ -1,0 +1,3 @@
+CREATE TABLE seasons (
+	id int NOT NULL AUTO_INCREMENT,
+)
