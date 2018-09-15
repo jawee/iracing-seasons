@@ -9,7 +9,7 @@ exports.create = (req, res) => {
         });
     }
 
-    if(!req.body.racenumber) {
+    if(!req.body.raceNumber) {
         return res.status(400).send({
             message: "Race must have a race number"
         });
@@ -23,9 +23,9 @@ exports.create = (req, res) => {
 
     // Create a Note
     const race = new Race({
-    	name: req.body.season,
+    	season: req.body.season,
         raceNumber: req.body.raceNumber,
-        track: req.body.String
+        track: req.body.track
     });
 
     // Save Note in the database
